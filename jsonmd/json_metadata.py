@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 '''
 Handles saving/loading key,values to/from a json file
-
 author: maxirocamora@gmail.com
-
 '''
 
 from sys import executable

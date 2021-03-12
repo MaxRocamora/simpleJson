@@ -1,23 +1,30 @@
-import setuptools
+import os
+import io
+from setuptools import setup, find_packages
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+# Import the README and use it as the long-description.
+# Note: this will only work if 'README.md' is present in your MANIFEST.in file!
+here = os.path.abspath(os.path.dirname(__file__))
+try:
+    with io.open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
+        long_description = '\n' + f.read()
+except FileNotFoundError:
+    long_description = ""
 
-setuptools.setup(
-    name='jsonMetadata',
-    version='1.1.1',
+setup(
+    name='simple-json-utils',
+    version='1.0.0',
+    description='Simpe Json Utitilies',
     author='Maximiliano Rocamora',
     author_email='maxirocamora@gmail.com',
-    description='Save/Load metadata from classes to json files',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/MaxRocamora/jsonMetadata',
+    url='https://github.com/MaxRocamora/simpleJson',
     license='GNU GENERAL PUBLIC LICENSE',
-    packages=setuptools.find_packages(),
+    packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 2.7",
         "License :: Freely Distributable",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=2.7',
-    zip_safe=False)
+    python_requires='>=2.7')

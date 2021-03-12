@@ -1,19 +1,13 @@
 # -*- coding: utf-8 -*-
 # --------------------------------------------------------------------------------------------
-#
 # Methods that handles commons json operations.
-#
-# 12/2017
-# 03/2018 - Fix invalid json files
-# 10/2018 - Moved from class to direct import methods
-# 04/2020 - left only the 2 methods I use
 # --------------------------------------------------------------------------------------------
 
 from __future__ import absolute_import, print_function
 
 import json
 import os
-from jsonmd.error import MissingJson, InvalidJson
+from jsonmd import MissingJson, InvalidJson
 
 
 def load_json(json_file):
@@ -52,3 +46,21 @@ def save_json(dataDict, json_file):
             json.dump(dataDict, loadedJsn, sort_keys=True, indent=4)
     except IOError:
         print('IOError: No such file of directory:', json_file)
+
+
+def update_json(values, json_file):
+    ''' Opens a json file, load its params,
+    add new keys and save it
+    '''
+    if not os.path.exists(json_file):
+        dictData = {}
+        with open(json_file, 'w') as loadedJsn:
+            json.dump(dictData, loadedJsn, sort_keys=True, indent=4)
+
+    # opens and read json into dictData
+    with open(json_file, 'r') as loadedJsn:
+        dictData = json.load(loadedJsn)
+        dictData.update(values)
+
+    with open(json_file, 'w') as loadedJsn:
+        json.dump(dictData, loadedJsn, sort_keys=True, indent=4)

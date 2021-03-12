@@ -1,5 +1,7 @@
-<h1><center>jsonMetadata</center></h1>
+<h1><center>Simple JSON Utils</center></h1>
+Simple utilities to manage json files.
 
+# JsonMetadata
 Load, save, and update data from your class to a json file, and viceversa.
 
 -------
@@ -90,6 +92,10 @@ ferrari.metadata = ferrari.meta.load_as_class()
 ferrari.metadata.fuel  # 200
 
 ```
+
+# JsonUtils
+
+load_json, update_json and save_json simplified methods.
 
 #### Install
 pip install json-metadata

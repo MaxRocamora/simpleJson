@@ -3,14 +3,8 @@ from __future__ import absolute_import, print_function
 
 import unittest
 import os
-import sys
 
-package_path = os.path.join((os.path.dirname(os.getcwd())), 'jsonmd')
-print(package_path)
-if package_path not in sys.path:
-    sys.path.append(package_path)
-
-from json_metadata import JsonMetadata
+from jsonmd.json_metadata import JsonMetadata
 
 # test path & name
 base_path = os.path.dirname(os.path.dirname(__file__))
