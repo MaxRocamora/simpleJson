@@ -1,6 +1,6 @@
 {
     "_about": "Saved by JsonMetada", 
-    "_version": "1.1.1", 
+    "_version": "1.0.0", 
     "items": [
         "foo", 
         "bar"
@@ -9,14 +9,14 @@
         "PC": "Max-PC", 
         "User": "Max", 
         "app": "python.exe", 
-        "jsonmd_version": "1.1.1", 
+        "jsonmd_version": "1.0.0", 
         "name": "test", 
         "python_version": "2.7.17 (v2.7.17:c2f86d86e6, Oct 19 2019, 21:01:17) [MSC v.1500 64 bit (AMD64)]", 
         "time": {
             "day": "12", 
             "month": "Mar", 
-            "save_time": "Fri Mar 12 18:04:56 2021", 
-            "time": "18:04", 
+            "save_time": "Fri Mar 12 19:38:53 2021", 
+            "time": "19:38", 
             "year": "2021", 
             "year_day": "071"
         }

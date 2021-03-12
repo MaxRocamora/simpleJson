@@ -3,6 +3,11 @@ from __future__ import absolute_import, print_function
 
 import unittest
 import os
+import sys
+
+path = 'D:/Repos/Arcane2/services/simpleJson'
+if path not in sys.path:
+    sys.path.append(path)
 
 from jsonmd.json_metadata import JsonMetadata
 
