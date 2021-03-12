@@ -1,4 +1,4 @@
-<h1><center>Simple JSON Utils</center></h1>
+# Simple JSON Utils
 Simple utilities to manage json files.
 
 # JsonMetadata
@@ -93,10 +93,12 @@ ferrari.metadata.fuel  # 200
 
 ```
 
-# JsonUtils
+# Json_utils module
 
 load_json, update_json and save_json simplified methods.
 
 #### Install
-pip install json-metadata
-https://pypi.org/project/json-metadata/1.1.0/
+pip install simple-json-utils
+
+#### PyPi URL
+https://pypi.org/project/simple-json-utils/

@@ -14,7 +14,7 @@ except FileNotFoundError:
 setup(
     name='simple-json-utils',
     version='1.0.0',
-    description='Simpe Json Utitilies',
+    description='Simple Json Utitilies',
     author='Maximiliano Rocamora',
     author_email='maxirocamora@gmail.com',
     long_description=long_description,
