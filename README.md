@@ -9,7 +9,7 @@ Load, save, and update data from your class to a json file, and viceversa.
 #### Example
 ```python
 
-import JsonMetadata
+from jsonmd.json_metadata import JsonMetadata
 
 class Car():
     def __init__(self, name):
@@ -56,7 +56,7 @@ Inside the json file:
 
 ```python
 
-import JsonMetadata
+from jsonmd.json_metadata import JsonMetadata
 
 class Car():
     def __init__(self, name):
@@ -96,6 +96,13 @@ ferrari.metadata.fuel  # 200
 # Json_utils module
 
 load_json, update_json and save_json simplified methods.
+
+```python
+
+from jsonmd.json_utils import load_json
+my_data = load_json(filepath)
+
+```
 
 #### Install
 pip install simple-json-utils
